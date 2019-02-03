@@ -2,9 +2,10 @@
   "name": "reactpractice",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Ahmed89tn.github.io/clicky-game",
+  "homepage": "https://Ahmed89TN.github.io/clicky-game",
   "dependencies": {
     "axios": "^0.18.0",
+    "gh-pages": "^2.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",
