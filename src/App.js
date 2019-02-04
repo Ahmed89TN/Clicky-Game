@@ -25,7 +25,8 @@ class App extends Component {
     topScore: 0,
     rightWrong: "Click an image to begin!",
     clicked: [],
-    correct:""
+    correct:false,
+    
   };
 
   handleClick = id => {
@@ -33,7 +34,9 @@ class App extends Component {
       this.handleIncrement();
       this.setState({ 
         clicked: this.state.clicked.concat(id),
-         rightWrong: "You guessed correctly!" 
+         rightWrong: "You guessed correctly!",
+         correct:true  
+        
         });
     } else {
       this.handleReset();
@@ -43,7 +46,9 @@ class App extends Component {
   handleIncrement = () => {
     const newScore = this.state.currentScore + 1;
     this.setState({
-      currentScore: newScore, 
+      currentScore: newScore,
+      
+      
     });
     if (newScore >= this.state.topScore) {
       this.setState({ topScore: newScore });
@@ -57,6 +62,7 @@ class App extends Component {
       currentScore: 0,
       topScore: this.state.topScore,
       rightWrong: "You guessed incorrectly!",
+      correct:false,
       clicked: []
     });
     this.handleShuffle();
@@ -64,7 +70,9 @@ class App extends Component {
 
   handleShuffle = () => {
     let shuffledFriends = shuffleFriends(friends);
-    this.setState({ friends: shuffledFriends });
+    this.setState({ friends: shuffledFriends,
+      correct:false
+     });
   };
 
   render() {
@@ -75,6 +83,8 @@ class App extends Component {
           score={this.state.currentScore}
           topScore={this.state.topScore}
           rightWrong={this.state.rightWrong}
+          correct={this.state.correct}
+          incorrect={this.state.incorrect}
         />
 
         <Title>
