@@ -26,6 +26,7 @@ class App extends Component {
     rightWrong: "Click an image to begin!",
     clicked: [],
     correct:false,
+    incorrect:false
     
   };
 
@@ -63,7 +64,8 @@ class App extends Component {
       topScore: this.state.topScore,
       rightWrong: "You guessed incorrectly!",
       correct:false,
-      clicked: []
+      clicked: [],
+      incorrect:true
     });
     this.handleShuffle();
   };
@@ -71,7 +73,7 @@ class App extends Component {
   handleShuffle = () => {
     let shuffledFriends = shuffleFriends(friends);
     this.setState({ friends: shuffledFriends,
-      correct:false
+     
      });
   };
 

@@ -8,7 +8,7 @@ const Nav = props => (
         <a href="/clicky-game/">{props.title}</a>
       </li>
 
-      <li id="rw" className={props.correct?"correct":""} >{props.rightWrong}</li>
+      <li id="rw" className={props.correct?"correct": props.incorrect? "incorrect" :""} >{props.rightWrong}</li>
 
       <li id="cur-sco">Current Score: {props.score}</li>
 
