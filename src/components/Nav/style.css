@@ -5,7 +5,7 @@ nav {
   margin-bottom: 50px;
   background-color: rgb(56, 56, 56);
   height: auto;
-  font-family: 'Bungee', cursive;
+ 
 }
 
 a {
@@ -30,15 +30,21 @@ ul {
   align-items: center;
 }
 .correct {
-  -webkit-animation: color-change 1s infinite ;
+  -webkit-animation: color-change 0.6s infinite ;
 }
 
 @-webkit-keyframes color-change {
-  0% { color: rgba(118, 119, 37, 0.76); }
-  50% { color: rgba(238, 255, 0, 0.918); }
-  100% { color: rgba(168, 159, 31, 0.212); }
+  0% { color:#31b1804d; }
+  50% { color: #31b180; }
+  100% { color: #31b1804d; }
 }
 .incorrect {
-  color: rgba(226, 6, 6, 0.747);
+  color: rgb(230, 62, 62);
+}
+#cur-sco{
+  margin-left: 39px;
+}
+#top-sco{
+  margin-left: -75px; 
 }
 
