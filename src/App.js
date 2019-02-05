@@ -3,6 +3,7 @@ import FriendCard from "./components/FriendCard";
 import Nav from "./components/Nav";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
+import Footer from "./components/Footer"
 import Container from "./Container";
 import Row from "./Row";
 import Column from "./Column";
@@ -79,6 +80,7 @@ class App extends Component {
 
   render() {
     return (
+      <div>
       <Wrapper>
         <Nav
           title="Juventus Clicky Game"
@@ -111,7 +113,8 @@ class App extends Component {
           </Row>
         </Container>
       </Wrapper>
-      
+      <Footer/>
+      </div>
     );
   }
 }

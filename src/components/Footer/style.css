@@ -1,0 +1,18 @@
+.footer {
+  background-color: rgb(56, 56, 56);
+    height: 100px;
+    position: relative;
+    color: #fed420;
+    overflow: auto;
+}
+
+.footer span {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  padding: 3px;
+  text-align: center;
+  font-size: 25px;
+
+}
